@@ -1,0 +1,48 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-release",
+            "displayName": "'conan-release' config",
+            "description": "'conan-release' configure using 'Unix Makefiles' generator",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release"
+            },
+            "environment": {
+                "QT_PLUGIN_PATH": "/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins",
+                "QT_HOST_PATH": "/home/admin/.conan2/p/b/qt71c9547cd5498/p"
+            },
+            "toolchainFile": "conan_toolchain.cmake",
+            "binaryDir": "/home/admin/Desktop/proto/build"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "jobs": 4
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "environment": {
+                "LD_LIBRARY_PATH": "/home/admin/.conan2/p/b/cadmwef0d8e33f7c23/p/lib:/home/admin/.conan2/p/b/iridi0047b5067bf2f/p/lib:/home/admin/.conan2/p/b/qt71c9547cd5498/p/lib:/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins/imageformats:/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins/platforms:/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins/iconengines:$penv{LD_LIBRARY_PATH}",
+                "DYLD_LIBRARY_PATH": "/home/admin/.conan2/p/b/cadmwef0d8e33f7c23/p/lib:/home/admin/.conan2/p/b/iridi0047b5067bf2f/p/lib:/home/admin/.conan2/p/b/qt71c9547cd5498/p/lib:/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins/imageformats:/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins/platforms:/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins/iconengines:$penv{DYLD_LIBRARY_PATH}",
+                "QT_PLUGIN_PATH": "/home/admin/.conan2/p/b/qt71c9547cd5498/p/plugins",
+                "PATH": "/home/admin/.conan2/p/b/qt71c9547cd5498/p/bin:$penv{PATH}"
+            }
+        }
+    ]
+}

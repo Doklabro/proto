@@ -1,0 +1,756 @@
+########### AGGREGATED COMPONENTS AND DEPENDENCIES FOR THE MULTI CONFIG #####################
+#############################################################################################
+
+list(APPEND qt_COMPONENT_NAMES Qt6::Platform Qt6::Core Qt6::Gui Qt6::XcbQpaPrivate Qt6::Network Qt6::Sql Qt6::Test Qt6::Concurrent Qt6::Xml Qt6::QSvgIconPlugin Qt6::QSvgPlugin Qt6::QXcbIntegrationPlugin Qt6::QGifPlugin Qt6::QIcoPlugin Qt6::Widgets Qt6::OpenGL Qt6::Svg Qt6::PrintSupport Qt6::OpenGLWidgets Qt6::SvgWidgets)
+list(REMOVE_DUPLICATES qt_COMPONENT_NAMES)
+if(DEFINED qt_FIND_DEPENDENCY_NAMES)
+  list(APPEND qt_FIND_DEPENDENCY_NAMES xkbcommon xorg opengl_system)
+  list(REMOVE_DUPLICATES qt_FIND_DEPENDENCY_NAMES)
+else()
+  set(qt_FIND_DEPENDENCY_NAMES xkbcommon xorg opengl_system)
+endif()
+set(xkbcommon_FIND_MODE "NO_MODULE")
+set(xorg_FIND_MODE "NO_MODULE")
+set(opengl_system_FIND_MODE "NO_MODULE")
+
+########### VARIABLES #######################################################################
+#############################################################################################
+set(qt_PACKAGE_FOLDER_RELEASE "/home/admin/.conan2/p/b/qt71c9547cd5498/p")
+set(qt_BUILD_MODULES_PATHS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Core/conan_qt_executables_variables.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Core/conan_qt_qt6_coreprivate.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/Qt6ConfigExtras.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicTestHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicAppleHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicPluginHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicTargetHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicWasmToolchainHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Core/Qt6CoreMacros.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Gui/conan_qt_qt6_guiprivate.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Widgets/conan_qt_qt6_widgetsprivate.cmake"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake")
+
+
+set(qt_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtSvgWidgets"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtOpenGLWidgets"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtPrintSupport"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtSvg"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtOpenGL"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtWidgets"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtXml"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtConcurrent"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtTest"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtSql"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtNetwork"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtGui"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtCore"
+			"${qt_PACKAGE_FOLDER_RELEASE}/mkspecs/linux-g++")
+set(qt_RES_DIRS_RELEASE )
+set(qt_DEFINITIONS_RELEASE "-DQT_SVGWIDGETS_LIB"
+			"-DQT_OPENGLWIDGETS_LIB"
+			"-DQT_PRINTSUPPORT_LIB"
+			"-DQT_SVG_LIB"
+			"-DQT_OPENGL_LIB"
+			"-DQT_WIDGETS_LIB"
+			"-DQT_XML_LIB"
+			"-DQT_CONCURRENT_LIB"
+			"-DQT_TEST_LIB"
+			"-DQT_SQL_LIB"
+			"-DQT_NETWORK_LIB"
+			"-DQT_XCBQPAPRIVATE_LIB"
+			"-DQT_GUI_LIB"
+			"-DQT_CORE_LIB"
+			"-DQT_NO_DEBUG")
+set(qt_SHARED_LINK_FLAGS_RELEASE )
+set(qt_EXE_LINK_FLAGS_RELEASE )
+set(qt_OBJECTS_RELEASE )
+set(qt_COMPILE_DEFINITIONS_RELEASE "QT_SVGWIDGETS_LIB"
+			"QT_OPENGLWIDGETS_LIB"
+			"QT_PRINTSUPPORT_LIB"
+			"QT_SVG_LIB"
+			"QT_OPENGL_LIB"
+			"QT_WIDGETS_LIB"
+			"QT_XML_LIB"
+			"QT_CONCURRENT_LIB"
+			"QT_TEST_LIB"
+			"QT_SQL_LIB"
+			"QT_NETWORK_LIB"
+			"QT_XCBQPAPRIVATE_LIB"
+			"QT_GUI_LIB"
+			"QT_CORE_LIB"
+			"QT_NO_DEBUG")
+set(qt_COMPILE_OPTIONS_C_RELEASE )
+set(qt_COMPILE_OPTIONS_CXX_RELEASE -fPIC)
+set(qt_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib"
+			"${qt_PACKAGE_FOLDER_RELEASE}/plugins/imageformats"
+			"${qt_PACKAGE_FOLDER_RELEASE}/plugins/platforms"
+			"${qt_PACKAGE_FOLDER_RELEASE}/plugins/iconengines")
+set(qt_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_LIBS_RELEASE Qt6SvgWidgets Qt6OpenGLWidgets Qt6PrintSupport Qt6Svg Qt6OpenGL Qt6Widgets Qt6Xml Qt6Concurrent Qt6Test Qt6Sql Qt6Network Qt6XcbQpa Qt6Gui Qt6Core)
+set(qt_SYSTEM_LIBS_RELEASE pthread)
+set(qt_FRAMEWORK_DIRS_RELEASE )
+set(qt_FRAMEWORKS_RELEASE )
+set(qt_BUILD_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Widgets"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Gui"
+			"${qt_PACKAGE_FOLDER_RELEASE}/bin"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6"
+			"${qt_PACKAGE_FOLDER_RELEASE}/lib/cmake/Qt6Core")
+set(qt_NO_SONAME_MODE_RELEASE FALSE)
+
+
+# COMPOUND VARIABLES
+set(qt_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_COMPILE_OPTIONS_C_RELEASE}>")
+set(qt_LINKER_FLAGS_RELEASE
+    "$<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_SHARED_LINK_FLAGS_RELEASE}>"
+    "$<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_SHARED_LINK_FLAGS_RELEASE}>"
+    "$<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_EXE_LINK_FLAGS_RELEASE}>")
+
+
+set(qt_COMPONENTS_RELEASE Qt6::Platform Qt6::Core Qt6::Gui Qt6::XcbQpaPrivate Qt6::Network Qt6::Sql Qt6::Test Qt6::Concurrent Qt6::Xml Qt6::QSvgIconPlugin Qt6::QSvgPlugin Qt6::QXcbIntegrationPlugin Qt6::QGifPlugin Qt6::QIcoPlugin Qt6::Widgets Qt6::OpenGL Qt6::Svg Qt6::PrintSupport Qt6::OpenGLWidgets Qt6::SvgWidgets)
+########### COMPONENT Qt6::SvgWidgets VARIABLES ############################################
+
+set(qt_Qt6_SvgWidgets_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtSvgWidgets")
+set(qt_Qt6_SvgWidgets_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_SvgWidgets_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_SvgWidgets_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_SvgWidgets_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_SvgWidgets_RES_DIRS_RELEASE )
+set(qt_Qt6_SvgWidgets_DEFINITIONS_RELEASE "-DQT_SVGWIDGETS_LIB")
+set(qt_Qt6_SvgWidgets_OBJECTS_RELEASE )
+set(qt_Qt6_SvgWidgets_COMPILE_DEFINITIONS_RELEASE "QT_SVGWIDGETS_LIB")
+set(qt_Qt6_SvgWidgets_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_SvgWidgets_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_SvgWidgets_LIBS_RELEASE Qt6SvgWidgets)
+set(qt_Qt6_SvgWidgets_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_SvgWidgets_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_SvgWidgets_FRAMEWORKS_RELEASE )
+set(qt_Qt6_SvgWidgets_DEPENDENCIES_RELEASE Qt6::Gui Qt6::Svg Qt6::Widgets Qt6::Core)
+set(qt_Qt6_SvgWidgets_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_SvgWidgets_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_SvgWidgets_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_SvgWidgets_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_SvgWidgets_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_SvgWidgets_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_SvgWidgets_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_SvgWidgets_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_SvgWidgets_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_SvgWidgets_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::OpenGLWidgets VARIABLES ############################################
+
+set(qt_Qt6_OpenGLWidgets_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtOpenGLWidgets")
+set(qt_Qt6_OpenGLWidgets_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_OpenGLWidgets_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_OpenGLWidgets_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_OpenGLWidgets_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_OpenGLWidgets_RES_DIRS_RELEASE )
+set(qt_Qt6_OpenGLWidgets_DEFINITIONS_RELEASE "-DQT_OPENGLWIDGETS_LIB")
+set(qt_Qt6_OpenGLWidgets_OBJECTS_RELEASE )
+set(qt_Qt6_OpenGLWidgets_COMPILE_DEFINITIONS_RELEASE "QT_OPENGLWIDGETS_LIB")
+set(qt_Qt6_OpenGLWidgets_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_OpenGLWidgets_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_OpenGLWidgets_LIBS_RELEASE Qt6OpenGLWidgets)
+set(qt_Qt6_OpenGLWidgets_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_OpenGLWidgets_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_OpenGLWidgets_FRAMEWORKS_RELEASE )
+set(qt_Qt6_OpenGLWidgets_DEPENDENCIES_RELEASE Qt6::OpenGL Qt6::Widgets Qt6::Core)
+set(qt_Qt6_OpenGLWidgets_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_OpenGLWidgets_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_OpenGLWidgets_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_OpenGLWidgets_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_OpenGLWidgets_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_OpenGLWidgets_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_OpenGLWidgets_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_OpenGLWidgets_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_OpenGLWidgets_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_OpenGLWidgets_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::PrintSupport VARIABLES ############################################
+
+set(qt_Qt6_PrintSupport_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtPrintSupport")
+set(qt_Qt6_PrintSupport_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_PrintSupport_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_PrintSupport_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_PrintSupport_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_PrintSupport_RES_DIRS_RELEASE )
+set(qt_Qt6_PrintSupport_DEFINITIONS_RELEASE "-DQT_PRINTSUPPORT_LIB")
+set(qt_Qt6_PrintSupport_OBJECTS_RELEASE )
+set(qt_Qt6_PrintSupport_COMPILE_DEFINITIONS_RELEASE "QT_PRINTSUPPORT_LIB")
+set(qt_Qt6_PrintSupport_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_PrintSupport_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_PrintSupport_LIBS_RELEASE Qt6PrintSupport)
+set(qt_Qt6_PrintSupport_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_PrintSupport_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_PrintSupport_FRAMEWORKS_RELEASE )
+set(qt_Qt6_PrintSupport_DEPENDENCIES_RELEASE Qt6::Gui Qt6::Widgets Qt6::Core)
+set(qt_Qt6_PrintSupport_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_PrintSupport_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_PrintSupport_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_PrintSupport_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_PrintSupport_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_PrintSupport_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_PrintSupport_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_PrintSupport_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_PrintSupport_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_PrintSupport_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Svg VARIABLES ############################################
+
+set(qt_Qt6_Svg_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtSvg")
+set(qt_Qt6_Svg_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Svg_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Svg_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Svg_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Svg_RES_DIRS_RELEASE )
+set(qt_Qt6_Svg_DEFINITIONS_RELEASE "-DQT_SVG_LIB")
+set(qt_Qt6_Svg_OBJECTS_RELEASE )
+set(qt_Qt6_Svg_COMPILE_DEFINITIONS_RELEASE "QT_SVG_LIB")
+set(qt_Qt6_Svg_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Svg_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Svg_LIBS_RELEASE Qt6Svg)
+set(qt_Qt6_Svg_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Svg_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Svg_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Svg_DEPENDENCIES_RELEASE Qt6::Gui Qt6::Core)
+set(qt_Qt6_Svg_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Svg_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Svg_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Svg_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Svg_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Svg_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Svg_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Svg_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Svg_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Svg_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::OpenGL VARIABLES ############################################
+
+set(qt_Qt6_OpenGL_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtOpenGL")
+set(qt_Qt6_OpenGL_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_OpenGL_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_OpenGL_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_OpenGL_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_OpenGL_RES_DIRS_RELEASE )
+set(qt_Qt6_OpenGL_DEFINITIONS_RELEASE "-DQT_OPENGL_LIB")
+set(qt_Qt6_OpenGL_OBJECTS_RELEASE )
+set(qt_Qt6_OpenGL_COMPILE_DEFINITIONS_RELEASE "QT_OPENGL_LIB")
+set(qt_Qt6_OpenGL_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_OpenGL_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_OpenGL_LIBS_RELEASE Qt6OpenGL)
+set(qt_Qt6_OpenGL_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_OpenGL_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_OpenGL_FRAMEWORKS_RELEASE )
+set(qt_Qt6_OpenGL_DEPENDENCIES_RELEASE Qt6::Gui Qt6::Core)
+set(qt_Qt6_OpenGL_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_OpenGL_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_OpenGL_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_OpenGL_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_OpenGL_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_OpenGL_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_OpenGL_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_OpenGL_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_OpenGL_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_OpenGL_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Widgets VARIABLES ############################################
+
+set(qt_Qt6_Widgets_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtWidgets")
+set(qt_Qt6_Widgets_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Widgets_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Widgets_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Widgets_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Widgets_RES_DIRS_RELEASE )
+set(qt_Qt6_Widgets_DEFINITIONS_RELEASE "-DQT_WIDGETS_LIB")
+set(qt_Qt6_Widgets_OBJECTS_RELEASE )
+set(qt_Qt6_Widgets_COMPILE_DEFINITIONS_RELEASE "QT_WIDGETS_LIB")
+set(qt_Qt6_Widgets_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Widgets_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Widgets_LIBS_RELEASE Qt6Widgets)
+set(qt_Qt6_Widgets_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Widgets_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Widgets_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Widgets_DEPENDENCIES_RELEASE Qt6::Gui Qt6::Core)
+set(qt_Qt6_Widgets_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Widgets_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Widgets_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Widgets_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Widgets_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Widgets_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Widgets_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Widgets_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Widgets_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Widgets_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::QIcoPlugin VARIABLES ############################################
+
+set(qt_Qt6_QIcoPlugin_INCLUDE_DIRS_RELEASE )
+set(qt_Qt6_QIcoPlugin_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/plugins/imageformats")
+set(qt_Qt6_QIcoPlugin_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_QIcoPlugin_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_QIcoPlugin_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_QIcoPlugin_RES_DIRS_RELEASE )
+set(qt_Qt6_QIcoPlugin_DEFINITIONS_RELEASE )
+set(qt_Qt6_QIcoPlugin_OBJECTS_RELEASE )
+set(qt_Qt6_QIcoPlugin_COMPILE_DEFINITIONS_RELEASE )
+set(qt_Qt6_QIcoPlugin_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_QIcoPlugin_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_QIcoPlugin_LIBS_RELEASE )
+set(qt_Qt6_QIcoPlugin_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_QIcoPlugin_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_QIcoPlugin_FRAMEWORKS_RELEASE )
+set(qt_Qt6_QIcoPlugin_DEPENDENCIES_RELEASE Qt6::Gui Qt6::Core)
+set(qt_Qt6_QIcoPlugin_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QIcoPlugin_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QIcoPlugin_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_QIcoPlugin_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_QIcoPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_QIcoPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_QIcoPlugin_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_QIcoPlugin_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_QIcoPlugin_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_QIcoPlugin_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::QGifPlugin VARIABLES ############################################
+
+set(qt_Qt6_QGifPlugin_INCLUDE_DIRS_RELEASE )
+set(qt_Qt6_QGifPlugin_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/plugins/imageformats")
+set(qt_Qt6_QGifPlugin_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_QGifPlugin_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_QGifPlugin_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_QGifPlugin_RES_DIRS_RELEASE )
+set(qt_Qt6_QGifPlugin_DEFINITIONS_RELEASE )
+set(qt_Qt6_QGifPlugin_OBJECTS_RELEASE )
+set(qt_Qt6_QGifPlugin_COMPILE_DEFINITIONS_RELEASE )
+set(qt_Qt6_QGifPlugin_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_QGifPlugin_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_QGifPlugin_LIBS_RELEASE )
+set(qt_Qt6_QGifPlugin_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_QGifPlugin_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_QGifPlugin_FRAMEWORKS_RELEASE )
+set(qt_Qt6_QGifPlugin_DEPENDENCIES_RELEASE Qt6::Gui Qt6::Core)
+set(qt_Qt6_QGifPlugin_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QGifPlugin_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QGifPlugin_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_QGifPlugin_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_QGifPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_QGifPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_QGifPlugin_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_QGifPlugin_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_QGifPlugin_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_QGifPlugin_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::QXcbIntegrationPlugin VARIABLES ############################################
+
+set(qt_Qt6_QXcbIntegrationPlugin_INCLUDE_DIRS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/plugins/platforms")
+set(qt_Qt6_QXcbIntegrationPlugin_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_QXcbIntegrationPlugin_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_QXcbIntegrationPlugin_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_QXcbIntegrationPlugin_RES_DIRS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_DEFINITIONS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_OBJECTS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_COMPILE_DEFINITIONS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_QXcbIntegrationPlugin_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_QXcbIntegrationPlugin_LIBS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_FRAMEWORKS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_DEPENDENCIES_RELEASE Qt6::Core Qt6::Gui Qt6::XcbQpaPrivate)
+set(qt_Qt6_QXcbIntegrationPlugin_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QXcbIntegrationPlugin_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_QXcbIntegrationPlugin_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_QXcbIntegrationPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_QXcbIntegrationPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_QXcbIntegrationPlugin_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_QXcbIntegrationPlugin_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_QXcbIntegrationPlugin_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_QXcbIntegrationPlugin_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::QSvgPlugin VARIABLES ############################################
+
+set(qt_Qt6_QSvgPlugin_INCLUDE_DIRS_RELEASE )
+set(qt_Qt6_QSvgPlugin_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/plugins/imageformats")
+set(qt_Qt6_QSvgPlugin_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_QSvgPlugin_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_QSvgPlugin_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_QSvgPlugin_RES_DIRS_RELEASE )
+set(qt_Qt6_QSvgPlugin_DEFINITIONS_RELEASE )
+set(qt_Qt6_QSvgPlugin_OBJECTS_RELEASE )
+set(qt_Qt6_QSvgPlugin_COMPILE_DEFINITIONS_RELEASE )
+set(qt_Qt6_QSvgPlugin_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_QSvgPlugin_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_QSvgPlugin_LIBS_RELEASE )
+set(qt_Qt6_QSvgPlugin_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_QSvgPlugin_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_QSvgPlugin_FRAMEWORKS_RELEASE )
+set(qt_Qt6_QSvgPlugin_DEPENDENCIES_RELEASE Qt6::Core)
+set(qt_Qt6_QSvgPlugin_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QSvgPlugin_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QSvgPlugin_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_QSvgPlugin_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_QSvgPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_QSvgPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_QSvgPlugin_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_QSvgPlugin_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_QSvgPlugin_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_QSvgPlugin_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::QSvgIconPlugin VARIABLES ############################################
+
+set(qt_Qt6_QSvgIconPlugin_INCLUDE_DIRS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/plugins/iconengines")
+set(qt_Qt6_QSvgIconPlugin_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_QSvgIconPlugin_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_QSvgIconPlugin_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_QSvgIconPlugin_RES_DIRS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_DEFINITIONS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_OBJECTS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_COMPILE_DEFINITIONS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_QSvgIconPlugin_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_QSvgIconPlugin_LIBS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_FRAMEWORKS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_DEPENDENCIES_RELEASE Qt6::Core)
+set(qt_Qt6_QSvgIconPlugin_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_QSvgIconPlugin_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_QSvgIconPlugin_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_QSvgIconPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_QSvgIconPlugin_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_QSvgIconPlugin_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_QSvgIconPlugin_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_QSvgIconPlugin_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_QSvgIconPlugin_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Xml VARIABLES ############################################
+
+set(qt_Qt6_Xml_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtXml")
+set(qt_Qt6_Xml_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Xml_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Xml_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Xml_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Xml_RES_DIRS_RELEASE )
+set(qt_Qt6_Xml_DEFINITIONS_RELEASE "-DQT_XML_LIB")
+set(qt_Qt6_Xml_OBJECTS_RELEASE )
+set(qt_Qt6_Xml_COMPILE_DEFINITIONS_RELEASE "QT_XML_LIB")
+set(qt_Qt6_Xml_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Xml_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Xml_LIBS_RELEASE Qt6Xml)
+set(qt_Qt6_Xml_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Xml_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Xml_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Xml_DEPENDENCIES_RELEASE Qt6::Core)
+set(qt_Qt6_Xml_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Xml_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Xml_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Xml_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Xml_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Xml_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Xml_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Xml_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Xml_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Xml_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Concurrent VARIABLES ############################################
+
+set(qt_Qt6_Concurrent_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtConcurrent")
+set(qt_Qt6_Concurrent_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Concurrent_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Concurrent_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Concurrent_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Concurrent_RES_DIRS_RELEASE )
+set(qt_Qt6_Concurrent_DEFINITIONS_RELEASE "-DQT_CONCURRENT_LIB")
+set(qt_Qt6_Concurrent_OBJECTS_RELEASE )
+set(qt_Qt6_Concurrent_COMPILE_DEFINITIONS_RELEASE "QT_CONCURRENT_LIB")
+set(qt_Qt6_Concurrent_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Concurrent_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Concurrent_LIBS_RELEASE Qt6Concurrent)
+set(qt_Qt6_Concurrent_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Concurrent_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Concurrent_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Concurrent_DEPENDENCIES_RELEASE Qt6::Core)
+set(qt_Qt6_Concurrent_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Concurrent_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Concurrent_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Concurrent_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Concurrent_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Concurrent_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Concurrent_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Concurrent_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Concurrent_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Concurrent_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Test VARIABLES ############################################
+
+set(qt_Qt6_Test_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtTest")
+set(qt_Qt6_Test_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Test_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Test_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Test_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Test_RES_DIRS_RELEASE )
+set(qt_Qt6_Test_DEFINITIONS_RELEASE "-DQT_TEST_LIB")
+set(qt_Qt6_Test_OBJECTS_RELEASE )
+set(qt_Qt6_Test_COMPILE_DEFINITIONS_RELEASE "QT_TEST_LIB")
+set(qt_Qt6_Test_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Test_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Test_LIBS_RELEASE Qt6Test)
+set(qt_Qt6_Test_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Test_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Test_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Test_DEPENDENCIES_RELEASE Qt6::Core)
+set(qt_Qt6_Test_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Test_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Test_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Test_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Test_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Test_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Test_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Test_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Test_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Test_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Sql VARIABLES ############################################
+
+set(qt_Qt6_Sql_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtSql")
+set(qt_Qt6_Sql_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Sql_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Sql_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Sql_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Sql_RES_DIRS_RELEASE )
+set(qt_Qt6_Sql_DEFINITIONS_RELEASE "-DQT_SQL_LIB")
+set(qt_Qt6_Sql_OBJECTS_RELEASE )
+set(qt_Qt6_Sql_COMPILE_DEFINITIONS_RELEASE "QT_SQL_LIB")
+set(qt_Qt6_Sql_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Sql_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Sql_LIBS_RELEASE Qt6Sql)
+set(qt_Qt6_Sql_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Sql_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Sql_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Sql_DEPENDENCIES_RELEASE Qt6::Core)
+set(qt_Qt6_Sql_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Sql_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Sql_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Sql_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Sql_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Sql_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Sql_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Sql_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Sql_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Sql_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Network VARIABLES ############################################
+
+set(qt_Qt6_Network_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtNetwork")
+set(qt_Qt6_Network_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Network_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Network_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Network_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Network_RES_DIRS_RELEASE )
+set(qt_Qt6_Network_DEFINITIONS_RELEASE "-DQT_NETWORK_LIB")
+set(qt_Qt6_Network_OBJECTS_RELEASE )
+set(qt_Qt6_Network_COMPILE_DEFINITIONS_RELEASE "QT_NETWORK_LIB")
+set(qt_Qt6_Network_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Network_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Network_LIBS_RELEASE Qt6Network)
+set(qt_Qt6_Network_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Network_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Network_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Network_DEPENDENCIES_RELEASE Qt6::Core)
+set(qt_Qt6_Network_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Network_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Network_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Network_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Network_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Network_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Network_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Network_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Network_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Network_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::XcbQpaPrivate VARIABLES ############################################
+
+set(qt_Qt6_XcbQpaPrivate_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include")
+set(qt_Qt6_XcbQpaPrivate_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_XcbQpaPrivate_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_XcbQpaPrivate_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_XcbQpaPrivate_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_XcbQpaPrivate_RES_DIRS_RELEASE )
+set(qt_Qt6_XcbQpaPrivate_DEFINITIONS_RELEASE "-DQT_XCBQPAPRIVATE_LIB")
+set(qt_Qt6_XcbQpaPrivate_OBJECTS_RELEASE )
+set(qt_Qt6_XcbQpaPrivate_COMPILE_DEFINITIONS_RELEASE "QT_XCBQPAPRIVATE_LIB")
+set(qt_Qt6_XcbQpaPrivate_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_XcbQpaPrivate_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_XcbQpaPrivate_LIBS_RELEASE Qt6XcbQpa)
+set(qt_Qt6_XcbQpaPrivate_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_XcbQpaPrivate_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_XcbQpaPrivate_FRAMEWORKS_RELEASE )
+set(qt_Qt6_XcbQpaPrivate_DEPENDENCIES_RELEASE xkbcommon::libxkbcommon-x11 xorg::xorg Qt6::Core)
+set(qt_Qt6_XcbQpaPrivate_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_XcbQpaPrivate_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_XcbQpaPrivate_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_XcbQpaPrivate_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_XcbQpaPrivate_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_XcbQpaPrivate_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_XcbQpaPrivate_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_XcbQpaPrivate_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_XcbQpaPrivate_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_XcbQpaPrivate_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Gui VARIABLES ############################################
+
+set(qt_Qt6_Gui_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtGui")
+set(qt_Qt6_Gui_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Gui_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Gui_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Gui_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Gui_RES_DIRS_RELEASE )
+set(qt_Qt6_Gui_DEFINITIONS_RELEASE "-DQT_GUI_LIB")
+set(qt_Qt6_Gui_OBJECTS_RELEASE )
+set(qt_Qt6_Gui_COMPILE_DEFINITIONS_RELEASE "QT_GUI_LIB")
+set(qt_Qt6_Gui_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Gui_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Gui_LIBS_RELEASE Qt6Gui)
+set(qt_Qt6_Gui_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Gui_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Gui_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Gui_DEPENDENCIES_RELEASE xkbcommon::xkbcommon xorg::xorg opengl::opengl Qt6::Core)
+set(qt_Qt6_Gui_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Gui_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Gui_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Gui_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Gui_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Gui_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Gui_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Gui_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Gui_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Gui_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Core VARIABLES ############################################
+
+set(qt_Qt6_Core_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/include"
+			"${qt_PACKAGE_FOLDER_RELEASE}/include/QtCore")
+set(qt_Qt6_Core_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Core_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Core_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Core_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Core_RES_DIRS_RELEASE )
+set(qt_Qt6_Core_DEFINITIONS_RELEASE "-DQT_CORE_LIB"
+			"-DQT_NO_DEBUG")
+set(qt_Qt6_Core_OBJECTS_RELEASE )
+set(qt_Qt6_Core_COMPILE_DEFINITIONS_RELEASE "QT_CORE_LIB"
+			"QT_NO_DEBUG")
+set(qt_Qt6_Core_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Core_COMPILE_OPTIONS_CXX_RELEASE "-fPIC")
+set(qt_Qt6_Core_LIBS_RELEASE Qt6Core)
+set(qt_Qt6_Core_SYSTEM_LIBS_RELEASE )
+set(qt_Qt6_Core_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Core_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Core_DEPENDENCIES_RELEASE Qt6::Platform)
+set(qt_Qt6_Core_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Core_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Core_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Core_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Core_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Core_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Core_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Core_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Core_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Core_COMPILE_OPTIONS_C_RELEASE}>")
+########### COMPONENT Qt6::Platform VARIABLES ############################################
+
+set(qt_Qt6_Platform_INCLUDE_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/mkspecs/linux-g++")
+set(qt_Qt6_Platform_LIB_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/lib")
+set(qt_Qt6_Platform_BIN_DIRS_RELEASE "${qt_PACKAGE_FOLDER_RELEASE}/bin")
+set(qt_Qt6_Platform_LIBRARY_TYPE_RELEASE SHARED)
+set(qt_Qt6_Platform_IS_HOST_WINDOWS_RELEASE 0)
+set(qt_Qt6_Platform_RES_DIRS_RELEASE )
+set(qt_Qt6_Platform_DEFINITIONS_RELEASE )
+set(qt_Qt6_Platform_OBJECTS_RELEASE )
+set(qt_Qt6_Platform_COMPILE_DEFINITIONS_RELEASE )
+set(qt_Qt6_Platform_COMPILE_OPTIONS_C_RELEASE "")
+set(qt_Qt6_Platform_COMPILE_OPTIONS_CXX_RELEASE "")
+set(qt_Qt6_Platform_LIBS_RELEASE )
+set(qt_Qt6_Platform_SYSTEM_LIBS_RELEASE pthread)
+set(qt_Qt6_Platform_FRAMEWORK_DIRS_RELEASE )
+set(qt_Qt6_Platform_FRAMEWORKS_RELEASE )
+set(qt_Qt6_Platform_DEPENDENCIES_RELEASE )
+set(qt_Qt6_Platform_SHARED_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Platform_EXE_LINK_FLAGS_RELEASE )
+set(qt_Qt6_Platform_NO_SONAME_MODE_RELEASE FALSE)
+
+# COMPOUND VARIABLES
+set(qt_Qt6_Platform_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${qt_Qt6_Platform_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${qt_Qt6_Platform_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${qt_Qt6_Platform_EXE_LINK_FLAGS_RELEASE}>
+)
+set(qt_Qt6_Platform_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${qt_Qt6_Platform_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${qt_Qt6_Platform_COMPILE_OPTIONS_C_RELEASE}>")
