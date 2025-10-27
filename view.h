@@ -37,10 +37,8 @@ private:
     void initColorGroup(const QString& groupName, const QVector<QPair<QString, QColor>>& colors);
 
     // указатели на UI элементы
-    Input *m_input;
     PrimaryButton *m_primaryButton;
     SecondaryButton *m_secondaryButton;
-    Label *m_resultLabel;
     Combobox *m_themeComboBox;
     Combobox *m_colorGroupComboBox;
     QStackedWidget *m_colorStack;

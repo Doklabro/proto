@@ -5,7 +5,6 @@
 #include <ui_ds/controls/molecules/label/label.h>
 #include <ui_ds/controls/molecules/buttons/primary_button.h>
 #include <ui_ds/controls/molecules/buttons/secondary_button.h>
-#include <ui_ds/controls/molecules/input/input.h>
 #include <ui_ds/controls/organisms/windows/window/window_container.h>
 #include <ui_ds/atoms/colors/theme_manager.h>
 
@@ -18,10 +17,8 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     
-    // Инициализация UI-DS библиотеки (ВАЖНО!)
-    ui::ds::common::UiDSPlugin::initializePlugin();
-    
-    WindowContainer window("Окно");
+   
+    WindowContainer window();
     window.setMinimumSize(400, 300);
 
     QWidget *centralWidget = new QWidget();
