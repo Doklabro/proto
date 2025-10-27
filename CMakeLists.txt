@@ -28,10 +28,3 @@ target_link_libraries(${PROJECT_NAME}
         Qt6::Widgets
         cadmw-ui-ds::cadmw-ui-ds
 )
-
-target_compile_definitions(${PROJECT_NAME} PRIVATE
-    PROJECT_VERSION_MAJOR="${PROJECT_VERSION_MAJOR}"
-    PROJECT_VERSION_MINOR="${PROJECT_VERSION_MINOR}"
-    PROJECT_VERSION_PATCH="${PROJECT_VERSION_PATCH}"
-    PROJECT_NAME="${PROJECT_NAME}"
-)
