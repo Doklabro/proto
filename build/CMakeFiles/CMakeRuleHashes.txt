@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+e1ad63afdcaa671adf165a312ae26028 CMakeFiles/proto_autogen
+e1ad63afdcaa671adf165a312ae26028 CMakeFiles/proto_autogen_timestamp_deps
+a9b64d8f9783c08e5af288d0b3127429 proto_autogen/timestamp

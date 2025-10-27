@@ -1,0 +1,5 @@
+/home/admin/Desktop/proto/build/CMakeFiles/proto.dir
+/home/admin/Desktop/proto/build/CMakeFiles/edit_cache.dir
+/home/admin/Desktop/proto/build/CMakeFiles/rebuild_cache.dir
+/home/admin/Desktop/proto/build/CMakeFiles/proto_autogen_timestamp_deps.dir
+/home/admin/Desktop/proto/build/CMakeFiles/proto_autogen.dir
