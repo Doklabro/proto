@@ -1,1 +1,0 @@
-. "/home/admin/Desktop/proto/build/deactivate_conanbuildenv-release-x86_64.sh"
